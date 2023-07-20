@@ -13,7 +13,8 @@ export default {
   props: {},
   data() {
     return {
-      timeUntil: moment.duration(moment(weddingDate).diff(moment()))
+      timeUntil: moment.duration(moment(weddingDate).diff(moment())),
+      change: "test"
     }
   },
   watch: {
