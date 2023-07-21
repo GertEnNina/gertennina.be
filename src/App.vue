@@ -13,6 +13,22 @@ export default {
 </script>
 
 <style>
+/* @import url('https://fonts.googleapis.com/css2?family=Jost:wght@900&display=swap');
+
+h1,
+h2,
+p {
+  font-family: 'Jost', sans-serif;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@900&display=swap');
+
+h1,
+h2,
+p {
+  font-family: 'Barlow', sans-serif;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

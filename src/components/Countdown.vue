@@ -83,7 +83,6 @@ h1 {
   margin-bottom: 0;
   padding: 0;
   font-size: 9.5rem;
-  letter-spacing: -10px;
   line-height: 90%;
 }
 
@@ -93,7 +92,6 @@ h2 {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 9.5rem;
-  letter-spacing: -1px;
   line-height: 90%;
 }
 
@@ -103,7 +101,6 @@ h2 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-transform: uppercase;
-  font-family: 'Open Sans Pro', sans-serif;
   background-size: 80%;
   background-position: 50% 20%;
   padding: 1rem 0 1rem 0;
