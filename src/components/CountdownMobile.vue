@@ -82,7 +82,7 @@ h2 {
   font-weight: 900;
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 4rem;
+  font-size: 4.5rem;
   line-height: 90%;
 }
 
@@ -104,7 +104,7 @@ h2 {
   justify-content: center;
   display: flex;
   flex-direction: column;
-  gap: 0.2rem;
+  /* gap: 0.2rem; */
   text-align: center;
 }
 
