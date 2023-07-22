@@ -92,8 +92,9 @@ h2 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-transform: uppercase;
-  background-size: 80%;
+  background-size: cover;
   background-position: 50% 20%;
+  background-repeat: no-repeat;
   padding: 1rem 0 1rem 0;
   /* margin: 1rem 0 1rem 0; */
 }
