@@ -1,32 +1,53 @@
 <template>
-  <Countdown></Countdown>
+  <VerticalCarousel :components="components">
+
+  </VerticalCarousel>
 </template>
 
 <script>
-import Countdown from './components/Countdown.vue';
+import VerticalCarousel from './components/VerticalCarousel.vue'
+
 export default {
   name: 'App',
   components: {
-    Countdown
+    VerticalCarousel
+  },
+  data() {
+    return {
+      carouselComponents: [
+        'Countdown',
+        'HotelInfo',
+      ]
+    }
+  },
+  computed: {
+    isMobile() {
+      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        return true
+      } else {
+        return false
+      }
+    },
+    components() {
+      return this.carouselComponents.map((element) => {
+        console.log(element);
+        return element + (this.isMobile ? 'Mobile' : '');
+      })
+    }
   }
 }
 </script>
 
 <style>
-/* @import url('https://fonts.googleapis.com/css2?family=Jost:wght@900&display=swap');
-
-h1,
-h2,
-p {
-  font-family: 'Jost', sans-serif;
-} */
-
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap');
 
 h1,
 h2,
 p {
   font-family: 'Barlow', sans-serif;
+  margin: 0;
 }
 
 #app {
