@@ -96,7 +96,7 @@ h1 {
   background-color: #ebebeb;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   gap: 0.5rem;
 }
 
