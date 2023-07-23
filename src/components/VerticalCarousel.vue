@@ -77,14 +77,18 @@ export default {
     }
   },
   watch: {
-
+    componentIndex: {
+      handler: function () {
+        window.addEventListener('wheel', this.onScroll);
+      },
+      immediate: true,
+    }
   },
   computed: {
 
 
   },
   mounted() {
-    window.addEventListener('wheel', this.onScroll);
   }
 }
 </script>
@@ -164,4 +168,5 @@ export default {
   50% {
     bottom: 10px;
   }
-}</style>
+}
+</style>
