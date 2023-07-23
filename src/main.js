@@ -10,7 +10,10 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 /* import specific icons */
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons'
 
-library.add(faArrowDown)
+/* import specific icons */
+import { faArrowUp } from '@fortawesome/free-solid-svg-icons'
+
+library.add(faArrowDown, faArrowUp)
 
 Number.prototype.pad = function(size) {
     var s = String(this);
