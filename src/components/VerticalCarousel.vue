@@ -50,12 +50,10 @@ export default {
         this.scrollLock = true;
         if (scrollDir > 0) {
           console.log('up');
-          this.transition = "slide-up";
           this.cycleComponent(1);
         }
         else if (scrollDir < 0) {
           console.log('down');
-          this.transition = "slide-down";
           this.cycleComponent(-1);
         }
         setTimeout(function () {
@@ -65,10 +63,12 @@ export default {
     },
     cycleComponent(dir) {
       if (dir > 0) {
+        this.transition = "slide-up";
         if (this.componentIndex < this.components.length - 1) {
           this.componentIndex++;
         }
       } else if (dir < 0) {
+        this.transition = "slide-down";
         if (this.componentIndex > 0) {
           this.componentIndex--;
         }
@@ -150,16 +150,18 @@ export default {
 
 .icon {
   font-size: 2rem;
-  place-self: center;;
+  place-self: center;
+  ;
 }
 
 @keyframes MoveUpDown {
-  0%, 100% {
+
+  0%,
+  100% {
     bottom: 0;
   }
+
   50% {
     bottom: 10px;
   }
-}
-
-</style>
+}</style>
