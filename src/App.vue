@@ -17,6 +17,7 @@ export default {
       carouselComponents: [
         'Countdown',
         'HotelInfo',
+        'AdressForm',
       ]
     }
   },
@@ -42,11 +43,19 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Mono:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Mono:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Mono:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Mono:wght@400&display=swap');
 
 h1,
-h2,
-p {
+h2 {
   font-family: 'Barlow', sans-serif;
+  margin: 0;
+}
+
+p {
+  font-family: 'Google Sans Mono', sans-serif;
   margin: 0;
 }
 

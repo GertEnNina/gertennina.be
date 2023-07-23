@@ -7,6 +7,11 @@
       </div>
     </Transition>
   </div>
+  <div v-if="componentIndex < components.length - 1" class="arrow-down-container">
+    <div class="arrow-down" @click="cycleComponent(1)">
+      <font-awesome-icon icon="fa-solid fa-arrow-down" class="icon" />
+    </div>
+  </div>
 </template>
 
 <script>
@@ -14,7 +19,9 @@
 import Countdown from './Countdown.vue';
 import HotelInfo from './HotelInfo.vue';
 import HotelInfoMobile from './HotelInfoMobile.vue';
-import CountdownMobile from './CountdownMobile.vue'
+import CountdownMobile from './CountdownMobile.vue';
+import AdressForm from './AdressForm.vue';
+import AdressFormMobile from './AdressFormMobile.vue';
 
 export default {
   name: 'VerticalCarousel',
@@ -22,7 +29,9 @@ export default {
     Countdown,
     HotelInfo,
     HotelInfoMobile,
-    CountdownMobile
+    CountdownMobile,
+    AdressForm,
+    AdressFormMobile,
   },
   props: [
     'components'
@@ -40,10 +49,12 @@ export default {
         const scrollDir = event.deltaY;
         this.scrollLock = true;
         if (scrollDir > 0) {
+          console.log('up');
           this.transition = "slide-up";
           this.cycleComponent(1);
         }
         else if (scrollDir < 0) {
+          console.log('down');
           this.transition = "slide-down";
           this.cycleComponent(-1);
         }
@@ -62,7 +73,7 @@ export default {
           this.componentIndex--;
         }
       }
-      console.log(this.components[this.componentIndex]);
+      // console.log(this.components[this.componentIndex]);
     }
   },
   watch: {
@@ -83,6 +94,16 @@ export default {
   height: 100%;
   width: 100%;
   position: relative;
+}
+
+.arrow-down-container {
+  position: absolute;
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+  animation: MoveUpDown 1s linear infinite;
 }
 
 .component-container {
@@ -115,4 +136,30 @@ export default {
 .slide-down-leave-to {
   transform: translateY(100%);
 }
+
+.arrow-down {
+  /* padding: 10px; */
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  border-radius: 9999px;
+  height: 3rem;
+  width: 3rem;
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 2rem;
+  place-self: center;;
+}
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 10px;
+  }
+}
+
 </style>

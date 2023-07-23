@@ -3,7 +3,7 @@
     <div class="countdown-elements-container" :style="image">
       <div class="amount-column">
         <h1 class="item">{{ (Math.floor(timeUntil.asDays())) }}</h1>
-        <h2 class="unit">Dagen</h2>
+        <h2 class="item">Dagen</h2>
         <h1 class="item">{{ (timeUntil.hours()).pad() }}</h1>
         <h2 class="item">Uren</h2>
         <h1 class="item">{{ (timeUntil.minutes()).pad() }}</h1>
@@ -73,8 +73,8 @@ h1 {
   margin-top: 0;
   margin-bottom: 0;
   padding: 0;
-  font-size: 6rem;
-  line-height: 90%;
+  font-size: 4.2rem;
+  line-height: 80%;
 }
 
 h2 {
@@ -82,8 +82,8 @@ h2 {
   font-weight: 900;
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 4.5rem;
-  line-height: 90%;
+  font-size: 4.2rem;
+  line-height: 80%;
 }
 
 .countdown-elements-container {
@@ -103,8 +103,9 @@ h2 {
   flex-grow: 1;
   justify-content: center;
   display: flex;
-  flex-direction: column;
-  /* gap: 0.2rem; */
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+  gap: 0.5rem;
   text-align: center;
 }
 
@@ -125,6 +126,7 @@ h2 {
 }
 
 .item {
-  height: 5rem;
+  /* height: 5rem; */
+  word-wrap: break-word;
 }
 </style>
