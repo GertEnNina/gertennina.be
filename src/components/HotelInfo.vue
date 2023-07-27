@@ -37,7 +37,7 @@ export default {
           distance: 250,
           nRooms: 200,
           discountCode: 'Malines',
-          disclaimer: '<p>Krijg <span style="font-weight: 600">10 % </span> op kamers inclusief ontbijt door je reservatie te maken via <a href=mailto:info@hotel-mechelen.be>info@hotel-mechelen.be</a> met vermelding van:<p><p style="margin-left: 1rem; margin-top:1rem; font-weight:400">Trouw Gert en Nina</p><p style="margin-left: 1rem; margin-top: 1rem; font-weight: 400">9 mei 2024</p><p style="margin-left: 1rem; margin-top: 1rem; font-weight: 400">Code Malines</p>'
+          disclaimer: '<p>Krijg <span>10% </span>korting op kamers inclusief ontbijt door je reservatie te maken via <a href=mailto:info@hotel-mechelen.be>info@hotel-mechelen.be</a> met vermelding van:<p><p style="margin-left: 1rem; margin-top:1rem; font-weight:400">Trouw Nina en Gert</p><p style="margin-left: 1rem; margin-top: 1rem; font-weight: 400">9 mei 2024</p><p style="margin-left: 1rem; margin-top: 1rem; font-weight: 400">Code Malines</p>'
         },
         {
           name: 'Hotel het Anker',
@@ -109,14 +109,14 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .hotel-info-elements-container {
   /* padding: 1rem; */
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 1.5rem;
   width: 100%;
 }
 

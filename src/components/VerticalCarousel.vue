@@ -109,7 +109,7 @@ export default {
   z-index: 10;
   position: absolute;
   width: 100%;
-  height: 4rem;
+  height: 3rem;
   display: flex;
   justify-content: center;
   bottom: 0;
@@ -120,7 +120,7 @@ export default {
   z-index: 10;
   position: absolute;
   width: 100%;
-  height: 4rem;
+  height: 3rem;
   display: flex;
   justify-content: center;
   top: 0;
@@ -166,13 +166,13 @@ export default {
   justify-content: center;
   background-color: white;
   border-radius: 9999px;
-  height: 3rem;
-  width: 3rem;
+  height: 2.5rem;
+  width: 2.5rem;
   cursor: pointer;
 }
 
 .icon {
-  font-size: 2rem;
+  font-size: 1.5rem;
   place-self: center;
   ;
 }
