@@ -1,40 +1,35 @@
 <template>
-  <VerticalCarousel :components="components">
-
-  </VerticalCarousel>
+  <component :is="currentView" />
 </template>
 
 <script>
-import VerticalCarousel from './components/VerticalCarousel.vue'
+import Register from './pages/Register.vue'
+import Timeline from './pages/Timeline.vue'
+
+const routes = {
+  '/': Register,
+  '/timeline': Timeline
+}
 
 export default {
   name: 'App',
   components: {
-    VerticalCarousel
+    Register,
+    Timeline
   },
   data() {
     return {
-      carouselComponents: [
-        'Countdown',
-        'HotelInfo',
-        'AdressForm',
-      ]
+      currentPath: window.location.pathname
     }
   },
   computed: {
-    isMobile() {
-      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-        return true
-      } else {
-        return false
-      }
-    },
-    components() {
-      return this.carouselComponents.map((element) => {
-        console.log(element);
-        return element + (this.isMobile ? 'Mobile' : '');
-      })
+    currentView() {
+      console.log('view changed: ', this.currentPath);
+      return routes[this.currentPath || '/'];
     }
+  },
+  mounted() {
+    window.addEventListener('locationchange', () => {this.currentPath = window.location.pathname;})
   }
 }
 </script>

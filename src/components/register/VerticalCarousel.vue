@@ -78,7 +78,6 @@ export default {
           this.componentIndex--;
         }
       }
-      // console.log(this.components[this.componentIndex]);
     }
   },
   watch: {
@@ -174,7 +173,6 @@ export default {
 .icon {
   font-size: 1.5rem;
   place-self: center;
-  ;
 }
 
 @keyframes MoveUpDown {
