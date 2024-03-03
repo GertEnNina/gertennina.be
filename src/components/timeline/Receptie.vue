@@ -1,15 +1,17 @@
 <template>
-  <div id="burgerlijke" class="container">
-    <p class="subtitle">Woensdag 8 mei, 11:25</p>
-    <h1>Burgerlijk huwelijk</h1>
-    <h2>Historisch Stadhuis, Grote Markt 9, 3000 Leuven</h2>
+  <div id="receptie" class="container">
+    <p class="subtitle">Woensdag 8 mei, 18:00</p>
+    <h1>Walking dinner</h1>
+    <h2>Abdij Keizersberg, Mechelsestraat 202, 3000 Leuven</h2>
     <div class="section">
       <h2>Route en parking</h2>
-      <Location address="Grote Markt 9, 3000 Leuven" location="Historisch Stadhuis Leuven" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2517.421659679618!2d4.69861247643042!3d50.878905771677175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c160d9b1d94719%3A0xf36ef92d64506731!2sHistorisch%20Stadhuis%20van%20Leuven!5e0!3m2!1snl!2sbe!4v1709490066760!5m2!1snl!2sbe"></Location>
+      <Location address="Mechelsestraat 202, 3000 Leuven" location="Abdij Keizersberg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2516.8997232988745!2d4.693666576430995!3d50.888566271679174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c160c31763da33%3A0x13b27b33cd030033!2sAbdij%20Keizersberg!5e0!3m2!1snl!2sbe!4v1709492069058!5m2!1snl!2sbe"></Location>
+    </div>
+    <div class="section">
+      <h2>Menu</h2>
     </div>
   </div>
 </template>
-
 <script>
 /* eslint-disable vue/multi-word-component-names */
 import Location from './Location.vue';
@@ -43,8 +45,8 @@ h1 {
 
 h2 {
   text-align: start !important;
-
 }
+
 
 .container {
   box-sizing: border-box;
@@ -54,13 +56,17 @@ h2 {
   flex-direction: column;
   width: 100%;
   padding: 3rem 2rem 3rem 2rem;
-  background-color: #8C3708;
-  color: #F0EFE4 !important;
+  background-color:  #E8FFCB;
+  color: #68121B !important;
 }
 
 .subtitle {
   text-align: start;
   font-size: 1rem;
+}
+
+.p {
+  font-weight: bold;
 }
 
 .section {
@@ -72,8 +78,9 @@ h2 {
   h2 {
     width: 30%;
     text-align: start;
-    border-bottom:  1px solid #F0EFE4;
-    font-weight: normal;
+    border-bottom:  1px solid #68121B;
+    margin-bottom: 1rem;
+    font-weight: bold;
   }
 }
 

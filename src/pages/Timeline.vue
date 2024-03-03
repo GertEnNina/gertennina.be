@@ -1,5 +1,7 @@
 <template>
     <div v-if="guest === undefined" class="name-input-container">
+      <div class="image-container">
+      </div>
       <div class="name-input-form">
         <p>Wie mogen we ontvangen?</p>
         <input class="name-input" type="text" placeholder="Voornaam" v-model="firstName"/>
@@ -24,12 +26,16 @@
 <script>
 // eslint-disable-next-line no-unused-vars
 import Burgerlijke from '../components/timeline/Burgerlijke.vue';
+import Receptie from '../components/timeline/Receptie.vue';
+import Ceremonie from '../components/timeline/Ceremonie.vue';
+import Diner from '../components/timeline/Diner.vue';
+import Feest from '../components/timeline/Feest.vue';
 
 const burgerlijkeComponent = Burgerlijke;
-const receptieComponent = "Receptie";
-const ceremonieComponent = "Ceremonie";
-const dinerComponent = "Diner";
-const feestComponent = "Feest";
+const receptieComponent = Receptie;
+const ceremonieComponent = Ceremonie;
+const dinerComponent = Diner;
+const feestComponent = Feest;
 
 const guests = [
     {
@@ -45,6 +51,7 @@ const guests = [
     },
     {
         "name": "Nina Steenberghs",
+        "partner": "Gert",
         "events": [
           burgerlijkeComponent,
           receptieComponent,
@@ -85,10 +92,20 @@ export default {
       });
     },
     scrollDown() {
-      this.currentScrollId = this.currentScrollId++ % this.scrollIds.length;
+      this.currentScrollId = (this.currentScrollId + 1) % this.scrollIds.length;
       console.log(this.currentScrollId);
-      window.location.hash = this.scrollIds[this.currentScrollId];
+      document.querySelector("#" + this.scrollIds[this.currentScrollId]).scrollIntoView({
+            behavior: 'smooth'
+        });
+        window.setTimeout(() => {
+          window.location.hash = this.scrollIds[this.currentScrollId];
+        }, 500);
     }
+  },
+  mounted() {
+    this.firstName = "Gert";
+    this.lastName = "Van der Brempt";
+    this.setName();
   },
   computed: {
     isMobile() {
@@ -114,6 +131,7 @@ export default {
   height: 90vh;
   display: flex;
   justify-content: center;
+  background-color: white;
 }
 
 .timeline-container {
@@ -121,8 +139,13 @@ export default {
   flex-direction: column;
   justify-content: center;
   position: relative;
-  overflow-y: scroll;
+  overflow-y: hidden;
   overflow-x: hidden
+}
+
+.image-container {
+  background-image: url('../assets/image.png');
+  position: absolute;
 }
 
 .name-input-form {
