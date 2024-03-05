@@ -3,9 +3,6 @@
     <div class="maps-container">
       <iframe class="maps-frame" :src="src" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
-    <div class="info-container">
-
-    </div>
   </div>
 </template>
 
@@ -33,8 +30,8 @@ export default {
 .location-container {
   box-sizing: border-box;
   display: flex;
+  flex-direction: column;
   gap: 2rem;
-  height: 400px;
   width: 70%;
   padding: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
@@ -44,8 +41,8 @@ export default {
   display: flex;
   flex-direction: column;
   text-align: start;
-  height: 100%;
-  width: 30%;
+  height: 40%;
+  width: 100%;
 }
 
 .maps-container {
@@ -53,8 +50,8 @@ export default {
   overflow: hidden;
   box-sizing: border-box;
   display: flex;
-  height: 100%;
-  width: 70%;
+  height: 40%;
+  width: 100%;
 }
 
 .maps-frame {
@@ -64,7 +61,6 @@ export default {
 
 @media only screen and (max-width: 600px) {
   .location-container {
-    flex-direction: column;
     width: 100%;
   }
   .info-container {

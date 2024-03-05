@@ -7,8 +7,7 @@ import Register from './pages/Register.vue'
 import Timeline from './pages/Timeline.vue'
 
 const routes = {
-  '/': Register,
-  '/timeline': Timeline
+  '/': Timeline,
 }
 
 export default {
@@ -43,15 +42,29 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Google+Sans+Mono:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Google+Sans+Mono:wght@400&display=swap');
 
-h1,
-h2 {
+@font-face {
+    font-family: 'Brittany';
+    src: url('./assets/fonts/BrittanySignature.ttf');
+}
+
+h1, h2  {
   font-family: 'Barlow', sans-serif;
   margin: 0;
 }
 
-p {
+p, a {
   font-family: 'Google Sans Mono', sans-serif;
   margin: 0;
+}
+
+h3 {
+  font-family: 'Brittany', sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  background-color: none;
 }
 
 #app {
