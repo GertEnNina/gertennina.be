@@ -14,9 +14,9 @@
 
     <div class="section">
       <h1 class="section-title">PARKING</h1>
-     
         <p class="subtitle">Q-Park Leuven Heilig Hart</p>
         <a href="https://maps.app.goo.gl/F4D1mxhdpFD3YgBV8">Naamsestraat 102, 3000 Leuven</a>
+        <p class="subtitle">10 min. wandelen van de locatie</p>
       </div>
   </div>
 </template>

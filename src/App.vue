@@ -64,6 +64,7 @@ h3 {
 
 a {
   text-decoration: none;
+  font-weight: normal !important;
   background-color: none;
 }
 

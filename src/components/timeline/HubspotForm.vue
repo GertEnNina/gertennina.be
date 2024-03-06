@@ -35,6 +35,9 @@ export default {
               target: "#hubspotForm_" + this.name.split(' ')[0],
               onFormReady: function(form){
                 form.elements['name_guest'].value = this.name;
+              }.bind(this),
+              onBeforeFormSubmit: function(){
+                  this.$emit('submit');
               }.bind(this)
           })
           break;
@@ -47,6 +50,24 @@ export default {
               target: "#hubspotForm_" + this.name.split(' ')[0],
               onFormReady: function(form){
                 form.elements['name_guest'].value = this.name;
+              }.bind(this),
+              onBeforeFormSubmit: function(){
+                  this.$emit('submit');
+              }.bind(this)
+          })
+          break;
+          case "ceremonie":
+            window.hbspt.forms.create({
+              css: '',
+              region: "eu1",
+              portalId: "140826681",
+              formId: "400fb4a0-d7bc-4a3c-bb18-38e1da9758ee",
+              target: "#hubspotForm_" + this.name.split(' ')[0],
+              onFormReady: function(form){
+                form.elements['name_guest'].value = this.name;
+              }.bind(this),
+              onBeforeFormSubmit: function(){
+                  this.$emit('submit');
               }.bind(this)
           })
           break;
@@ -59,6 +80,9 @@ export default {
               target: "#hubspotForm_" + this.name.split(' ')[0],
               onFormReady: function(form){
                 form.elements['name_guest'].value = this.name;
+              }.bind(this),
+              onBeforeFormSubmit: function(){
+                  this.$emit('submit');
               }.bind(this)
           })
           break;
@@ -71,6 +95,9 @@ export default {
               target: "#hubspotForm_" + this.name.split(' ')[0],
               onFormReady: function(form){
                 form.elements['name_guest'].value = this.name;
+              }.bind(this),
+              onBeforeFormSubmit: function(){
+                  this.$emit('submit');
               }.bind(this)
           })
           break;

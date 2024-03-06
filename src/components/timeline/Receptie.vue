@@ -1,7 +1,7 @@
 <template>
   <div id="receptie" class="container">
     <h3>woensdag 8 mei</h3>
-    <h1 class="event-title">18:00</h1>
+    <h1 class="event-title">18:00 - 21:00</h1>
     <h1 class="event-title" style="margin-bottom: 0.5rem;">WALKING DINNER</h1>
     <div class="section">
       <h1 class="section-title">LOCATIE</h1>

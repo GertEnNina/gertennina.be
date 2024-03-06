@@ -1,20 +1,24 @@
 <template>
   <div id="faq" class="container">
-    <h1 class="event-title" style="margin-bottom: 0.5rem;">FAQ</h1>
+    <h1 class="event-title" style="margin-bottom: 0.5rem;">Extra informatie</h1>
+    <div class="section">
+      <h1 class="section-title">Wat kunnen we jullie cadeau geven?</h1>
+      <p class="subtitle">We zijn ontzettend dankbaar om samen met jullie dit belangrijk moment te kunnen beleven. We hebben al meer potten, pannen en servies dan we nodig hebben, maar we zouden enorm blij zijn met een bijdrage aan onwe huwelijksreis. Als je graag iets wilt schenken, kan dat via ons rekeningnummer BE76 7441 0004 6395.</p>
+    </div>
     
     <div class="section">
       <h1 class="section-title">Wil je ons graag verassen tijdens ons feest?</h1>
-      <p class="subtitle">Super fijn, alvast bedankt. <span style="font-weight: bold;">Lennart Steenberghs</span> is onze ceremoniemeester van dienst, laat hem dus zeker iets weten via ... of op de dag zelf zodat alles soepel verloopt en wij zeker genoeg aandacht hebben voor jou.</p>
+      <p class="subtitle">Super fijn, alvast bedankt. Neem contact op met onze ceremoniemeester, Lennart Steenberghs, via <span style="font-weight: bold;">lennart.steenberghs@gmail.com</span>. Zo kunnen we er voor zorgen dat alles soepel verloopt en wij zeker voldoende aandacht hebben voor jou.</p>
     </div>
 
     <div class="section">
       <h1 class="section-title">Wat moet ik aandoen?</h1>
-      <p class="subtitle">Voor ons is het vooral belangrijk dat je aandoet waar je je goed bij voelt, maar moest je toch nog twijfelen, ga dan voor <span style="font-weight: bold;">casual chique</span> .</p>
+      <p class="subtitle">Het belangrijkste is dat je iets draagt waarin je je goed voel. Als je toch zou twijfelen, ga dan voor casual chic.</p>
     </div>
 
     <div class="section">
-      <h1 class="section-title">Mogen we foto's trekken?</h1>
-      <p class="subtitle" style="margin-bottom: 1.5rem;">Natuurlijk! We zouden het geweldig vinden als jullie deel uitmaken van het vastleggen van onze speciale dag. <span style="font-weight: bold;">Tijdens de ceremonie en het belangrijkste deel van het feest vragen we echter om geen foto's te maken</span>, zodat iedereen volledig kan genieten en aanwezig kan zijn. Onze fotograaf neemt het vastleggen van deze momenten voor zich en we zullen er voor zorgen dat alle foto's toegankelijk gemaakt worden voor jullie!</p>
+      <h1 class="section-title">Mogen we foto's nemen tijdens de ceremonie en het feest?</h1>
+      <p class="subtitle" style="margin-bottom: 1.5rem;">Natuurlijk! <span style="font-weight: bold;">Tijdens de ceremonie willen we echter een intieme sfeer behouden, dus vragen we om geen foto's te maken tijdens dit deel van de dag</span>. Onze fotograaf zal zorgen voor prachtige beelden die we graag met jullie wullen delen na afloop van het feest.</p>
     </div>
   </div>
 </template>

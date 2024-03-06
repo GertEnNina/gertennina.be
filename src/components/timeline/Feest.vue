@@ -20,11 +20,10 @@
 
       <div class="section">
       <h1 class="section-title">OVERNACHTING</h1>
-     
-        <p>Hotel Van der Valk</p>
-        <p style="font-size: 0.8rem;">Krijg <span>10% </span>korting op kamers inclusief ontbijt door je reservatie te maken via <a href=mailto:info@hotel-mechelen.be>info@hotel-mechelen.be</a> met vermelding van:</p><p style="margin-left: 1rem; margin-top:1rem; font-weight:400; font-size: 0.8rem;">Trouw Nina en Gert</p><p style="margin-left: 1rem; margin-top: 1rem; font-weight: 400; font-size: 0.8rem;">9 mei 2024</p><p style="margin-left: 1rem; margin-top: 1rem; font-weight: 400; font-size: 0.8rem;">Code Malines</p>
-        <p style="margin-top: 1rem;">Hotel het Anker</p>
-        <p style="font-size: 0.8rem;">Slechts 20 kamers dus wees er snel bij!</p><a style="font-size: 0.8rem;margin-bottom: 1.5rem;" href="www.hetanker.be/nl/overnachten-in-de-brouwerij">Boek hier</a>
+        <p style=" font-weight: bold;">- Hotel Van der Valk -</p>
+        <p>Krijg <span>10% </span>korting op kamers inclusief ontbijt door je reservatie te maken via <a href=mailto:info@hotel-mechelen.be>info@hotel-mechelen.be</a> met vermelding van:</p><p style="margin-left: 1rem; margin-top:1rem; font-weight:400">Trouw Nina en Gert - 9 mei 2024 - Code Malines</p>
+        <p style="margin-top: 1rem;font-weight: bold;">- Hotel het Anker -</p>
+        <p style="">Slechts 20 kamers dus wees er snel bij!</p><a style="margin-bottom: 1.5rem;" href="www.hetanker.be/nl/overnachten-in-de-brouwerij">Boek hier</a>
       </div>
   </div>
 </template>
@@ -83,7 +82,7 @@ h3 {
   flex-direction: column;
   width: 100%;
   height: 100%;
-  justify-content: center;
+  justify-content: start;
   padding: 3rem 2rem 3rem 2rem;
   background-color: #BDCAAE;
   color: #68121B !important;

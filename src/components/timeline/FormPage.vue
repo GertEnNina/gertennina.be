@@ -1,9 +1,9 @@
 <template>
   <div class="container">
-    <h1 class="event-title" style="margin-bottom: 0.5rem;">Bevestig aanwezigheid</h1>
+    <h1 class="event-title" style="margin-bottom: 0.5rem;">{{ forPartner ? 'Bevestig de aanwezigheid van je partner' : 'Bevestig je aanwezigheid'}}</h1>
     
     <div class="section">
-      <HubspotForm :formType="guest.formType" :name="guest.name"></HubspotForm>
+      <HubspotForm @submit="submit()" :formType="guest.formType" :name="guest.name"></HubspotForm>
     </div>
 
   </div>
@@ -15,12 +15,18 @@ import HubspotForm from './HubspotForm.vue';
 
 export default {
     name: 'FormPage',
-    props: { guest: Object },
+    props: { guest: Object, forPartner: Boolean },
     data() {
         return {};
     },
     watch: {},
     computed: {},
+    methods: {
+      submit() {
+        console.log('submit');
+        this.$emit('submit');
+      }
+    },
     components: { HubspotForm }
 }
 </script>
@@ -93,10 +99,11 @@ a {
 }
 
 @media only screen and (max-width: 600px) {
-  
+
   .container {
     justify-content: start;
   }
+  
   .section {
     width: 100%;
 
