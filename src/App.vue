@@ -1,40 +1,34 @@
 <template>
-  <VerticalCarousel :components="components">
-
-  </VerticalCarousel>
+  <component :is="currentView" />
 </template>
 
 <script>
-import VerticalCarousel from './components/VerticalCarousel.vue'
+import Register from './pages/Register.vue'
+import Timeline from './pages/Timeline.vue'
+
+const routes = {
+  '/': Timeline,
+}
 
 export default {
   name: 'App',
   components: {
-    VerticalCarousel
+    Register,
+    Timeline
   },
   data() {
     return {
-      carouselComponents: [
-        'Countdown',
-        'HotelInfo',
-        'AdressForm',
-      ]
+      currentPath: window.location.pathname
     }
   },
   computed: {
-    isMobile() {
-      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-        return true
-      } else {
-        return false
-      }
-    },
-    components() {
-      return this.carouselComponents.map((element) => {
-        console.log(element);
-        return element + (this.isMobile ? 'Mobile' : '');
-      })
+    currentView() {
+      console.log('view changed: ', this.currentPath);
+      return routes[this.currentPath || '/'];
     }
+  },
+  mounted() {
+    window.addEventListener('locationchange', () => {this.currentPath = window.location.pathname;})
   }
 }
 </script>
@@ -48,15 +42,30 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Google+Sans+Mono:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Google+Sans+Mono:wght@400&display=swap');
 
-h1,
-h2 {
+@font-face {
+    font-family: 'Brittany';
+    src: url('./assets/fonts/BrittanySignature.ttf');
+}
+
+h1, h2  {
   font-family: 'Barlow', sans-serif;
   margin: 0;
 }
 
-p {
+p, a {
   font-family: 'Google Sans Mono', sans-serif;
   margin: 0;
+}
+
+h3 {
+  font-family: 'Brittany', sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  font-weight: normal !important;
+  background-color: none;
 }
 
 #app {

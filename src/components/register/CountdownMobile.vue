@@ -3,23 +3,13 @@
     <div class="countdown-elements-container" :style="image">
       <div class="amount-column">
         <h1 class="item">{{ (Math.floor(timeUntil.asDays())) }}</h1>
+        <h2 class="item">Dagen</h2>
         <h1 class="item">{{ (timeUntil.hours()).pad() }}</h1>
+        <h2 class="item">Uren</h2>
         <h1 class="item">{{ (timeUntil.minutes()).pad() }}</h1>
+        <h2 class="item">Minuten</h2>
         <h1 class="item">{{ (timeUntil.seconds()).pad() }}</h1>
-      </div>
-      <div class="unit-column">
-        <div class="item-container">
-          <h2 class="item">Dagen</h2>
-        </div>
-        <div class="item-container">
-          <h2 class="item">Uren</h2>
-        </div>
-        <div class="item-container">
-          <h2 class="item">Minuten</h2>
-        </div>
-        <div class="item-container">
-          <h2 class="item">Seconden</h2>
-        </div>
+        <h2 class="item">Seconden</h2>
       </div>
     </div>
   </div>
@@ -32,7 +22,7 @@ import moment from 'moment';
 const weddingDate = '2024/05/09 13:30:00'
 
 export default {
-  name: 'Countdown',
+  name: 'CountdownMobile',
   props: {},
   data() {
     return {
@@ -59,7 +49,7 @@ export default {
     image() {
 
       return {
-        backgroundImage: `url(${require('../assets/test.jpg')})`
+        backgroundImage: `url(${require('../../assets/test.jpg')})`
       }
     }
   }
@@ -83,8 +73,8 @@ h1 {
   margin-top: 0;
   margin-bottom: 0;
   padding: 0;
-  font-size: 9.5rem;
-  line-height: 90%;
+  font-size: 4.2rem;
+  line-height: 80%;
 }
 
 h2 {
@@ -92,29 +82,31 @@ h2 {
   font-weight: 900;
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 9.5rem;
-  line-height: 90%;
+  font-size: 4.2rem;
+  line-height: 80%;
 }
 
 .countdown-elements-container {
   display: flex;
-  gap: 2rem;
+  /* gap: 2rem; */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-transform: uppercase;
-  background-size: 80%;
+  background-size: cover;
   background-position: 50% 20%;
+  background-repeat: no-repeat;
   padding: 1rem 0 1rem 0;
-  margin: 1rem 0 1rem 0;
+  /* margin: 1rem 0 1rem 0; */
 }
 
 .amount-column {
   flex-grow: 1;
-  justify-content: end;
+  justify-content: center;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
   gap: 0.5rem;
-  text-align: end;
+  text-align: center;
 }
 
 .unit-column {
@@ -134,6 +126,7 @@ h2 {
 }
 
 .item {
-  height: 8rem;
+  /* height: 5rem; */
+  word-wrap: break-word;
 }
 </style>
