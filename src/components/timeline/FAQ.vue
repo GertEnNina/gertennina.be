@@ -3,7 +3,7 @@
     <h1 class="event-title" style="margin-bottom: 0.5rem;">Extra informatie</h1>
     <div class="section">
       <h1 class="section-title">Wat kunnen we jullie cadeau geven?</h1>
-      <p class="subtitle">We zijn ontzettend dankbaar om samen met jullie dit belangrijk moment te kunnen beleven. We hebben al meer potten, pannen en servies dan we nodig hebben, maar we zouden enorm blij zijn met een bijdrage aan onwe huwelijksreis. Als je graag iets wilt schenken, kan dat via ons rekeningnummer BE76 7441 0004 6395.</p>
+      <p class="subtitle">We zijn ontzettend dankbaar om samen met jullie dit belangrijk moment te kunnen beleven. We hebben al meer potten, pannen en servies dan we nodig hebben, maar we zouden enorm blij zijn met een bijdrage aan onze huwelijksreis. Als je graag iets wilt schenken, kan dat via ons rekeningnummer BE76 7441 0004 6395.</p>
     </div>
     
     <div class="section">
