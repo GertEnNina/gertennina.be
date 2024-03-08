@@ -31,6 +31,7 @@
         </div>
       </div>
       <div class="welcome" id="welcome">
+
         <h2>Welkom {{ guest.name.split(" ")[0] }},</h2>
         <p style="margin-top: 0.5rem;">We ontvangen jou <span v-if="partner">en {{ partner.name.split(" ")[0] !== 'Partner' ? partner.name.split(" ")[0] : 'jouw partner' }}</span> graag om samen ons huwelijk te vieren</p>
         <p style="margin-top: 2rem;">Gebruik de pijltjes boven - en onder de pagina om een kijkje te nemen op onze site.</p>
@@ -2418,6 +2419,19 @@ export default {
   height: 2.5rem;
   width: 2.5rem;
   cursor: pointer;
+}
+
+.stupid-image-container {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.stupid-image {
+    height: 100%;
+    object-fit: contain;
+
 }
 
 .icon {
