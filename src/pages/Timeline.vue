@@ -31,6 +31,7 @@
         </div>
       </div>
       <div class="welcome" id="welcome">
+
         <h2>Welkom {{ guest.name.split(" ")[0] }},</h2>
         <p style="margin-top: 0.5rem;">We ontvangen jou <span v-if="partner">en {{ partner.name.split(" ")[0] !== 'Partner' ? partner.name.split(" ")[0] : 'jouw partner' }}</span> graag om samen ons huwelijk te vieren.</p>
         <p style="margin-top: 2rem;">Gebruik de pijltjes boven- en onderaan de pagina om een kijkje te nemen op onze site.</p>
@@ -39,7 +40,7 @@
         <div class="index">
           <p>Ga snel naar</p>
           <p class="index-item" @click="scrollTo(1)">> Het programma</p>
-          <p class="index-item" @click="scrollTo(6)" v-if="guest.formType !== 'receptie'">> De praktishe informatie</p>
+          <p class="index-item" @click="scrollTo(6)" v-if="guest.formType !== 'receptie'">> De praktische informatie</p>
           <p class="index-item" @click="scrollTo(7)">> Je aanwezigheid bevestigen</p>
         </div>
       </div>
@@ -2418,6 +2419,19 @@ export default {
   height: 2.5rem;
   width: 2.5rem;
   cursor: pointer;
+}
+
+.stupid-image-container {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.stupid-image {
+    height: 100%;
+    object-fit: contain;
+
 }
 
 .icon {
