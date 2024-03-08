@@ -39,7 +39,7 @@
         <div class="index">
           <p>Ga snel naar</p>
           <p class="index-item" @click="scrollTo(1)">> Het programma</p>
-          <p class="index-item" @click="scrollTo(6)" v-if="guest.formType !== 'receptie'">> De praktishe informatie</p>
+          <p class="index-item" @click="scrollTo(6)" v-if="guest.formType !== 'receptie'">> De praktische informatie</p>
           <p class="index-item" @click="scrollTo(7)">> Je aanwezigheid bevestigen</p>
         </div>
       </div>

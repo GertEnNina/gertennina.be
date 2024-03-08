@@ -18,7 +18,17 @@
 
     <div class="section">
       <h1 class="section-title">Mogen we foto's nemen tijdens de ceremonie en het feest?</h1>
-      <p class="subtitle" style="margin-bottom: 1.5rem;">Natuurlijk! <span style="font-weight: bold;">Tijdens de ceremonie willen we echter een intieme sfeer behouden, dus vragen we om geen foto's te maken tijdens dit deel van de dag</span>. Onze fotograaf zal zorgen voor prachtige beelden die we graag met jullie wullen delen na afloop van het feest.</p>
+      <p class="subtitle">Natuurlijk! <span style="font-weight: bold;">Tijdens de ceremonie willen we echter een intieme sfeer behouden, dus vragen we om geen foto's te maken tijdens dit deel van de dag</span>. Onze fotograaf zal zorgen voor prachtige beelden die we graag met jullie wullen delen na afloop van het feest.</p>
+    </div>
+
+    <div class="section">
+      <h1 class="section-title">Wie heeft die mooie foto's van jullie getrokken?</h1>
+      <p class="subtitle">De foto op de welkomstpagina van deze website is getrokken door Martijn Margullier. De foto op de uitnodiging is getrokken door Kaat Van der Brempt.</p>
+    </div>
+    
+    <div class="section">
+      <h1 class="section-title">Ik heb een vraag waarop ik nog geen antwoord heb gevonden. Hoe kan ik jullie contacteren?</h1>
+      <p class="subtitle" style="margin-bottom: 1.5rem;">Als je nog een vraag hebt, kan je ons bereiken door een mailtje te sturen naar <span style="font-weight: bold;">gert.nina.vdbstb@gmail.com</span>. Liever via de post? Ons adres is Jean-Baptiste Van Monsstraat 77 bus 0002, 3000 Leuven.</p>
     </div>
   </div>
 </template>
@@ -64,8 +74,10 @@ h3 {
 }
 
 .section-title {
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-bottom: 0.5rem;
+  width: 100%;
+  text-align: start;
 }
 .container {
   box-sizing: border-box;
@@ -75,7 +87,7 @@ h3 {
   width: 100%;
   height: 100%;
   padding: 3rem 2rem 3rem 2rem;
-  justify-content: center;
+  justify-content: start;
   background-color: #ebebeb;
   color: #39393A !important;
 }
@@ -87,6 +99,7 @@ a {
 
 .subtitle {
   font-size: 1rem;
+  text-align: start;
 }
 
 .section {
