@@ -19,7 +19,7 @@
             </div>
         </div>
         <div v-if="!scrolledToNameInput" class="arrow-down-container">
-          <div class="arrow" @click="scrollToNameInput()">
+          <div class="arrow" :class="currentScrollId === 0 ? 'white' : ''" @click="scrollToNameInput()">
             <font-awesome-icon icon="fa-solid fa-arrow-down" class="icon" />
           </div>
         </div>
@@ -30,15 +30,17 @@
           <font-awesome-icon icon="fa-solid fa-arrow-up" class="icon" />
         </div>
       </div>
+      <div class="stupid-image-container">
+            <img class="stupid-image" src="../assets/img.png">
+        </div>
       <div class="welcome" id="welcome">
-
         <h2>Welkom {{ guest.name.split(" ")[0] }},</h2>
         <p style="margin-top: 0.5rem;">We ontvangen jou <span v-if="partner">en {{ partner.name.split(" ")[0] !== 'Partner' ? partner.name.split(" ")[0] : 'jouw partner' }}</span> graag om samen ons huwelijk te vieren</p>
         <p style="margin-top: 2rem;">Gebruik de pijltjes boven - en onder de pagina om een kijkje te nemen op onze site.</p>
         <p>Je vind hier meer details over het programma en praktische informatie.</p>
-        <p>  <span style="font-weight: bold;">Aan het einde vind je een formulier om jou <span v-if="partner">en jouw partner's</span> aanwezigheid te bevestigen</span></p>
+        <p>  <span style="font-weight: bold;">Aan het einde vind je een formulier om jou <span v-if="partner">en je partners</span> aanwezigheid te bevestigen</span></p>
         <div class="index">
-          <p>Ga snel naar</p>
+          <h2>Ga snel naar</h2>
           <p class="index-item" @click="scrollTo(1)">> Het programma</p>
           <p class="index-item" @click="scrollTo(6)" v-if="guest.formType !== 'receptie'">> De praktische informatie</p>
           <p class="index-item" @click="scrollTo(7)">> Je aanwezigheid bevestigen</p>
@@ -54,7 +56,7 @@
         </div>
       </div>
       <div v-if="currentScrollId !== scrollIds.length - (partner ? 1 : 2)" class="arrow-down-container">
-          <div class="arrow" @click="scrollDown()">
+          <div class="arrow" :class="{'white': currentScrollId === 0}" @click="scrollDown()">
             <font-awesome-icon icon="fa-solid fa-arrow-down" class="icon" />
           </div>
         </div>
@@ -2283,6 +2285,7 @@ export default {
   justify-content: center;
   position: relative;
   overflow-y: hidden;
+  position: relative;
   overflow-x: hidden
 }
 
@@ -2342,11 +2345,6 @@ export default {
   overflow-x: hidden
 }
 
-.image-container {
-  background-image: url('../assets/image.png');
-  position: absolute;
-}
-
 .name-input-form {
   display: flex;
   flex-direction: column;
@@ -2357,12 +2355,13 @@ export default {
 
 .welcome {
   padding: 2rem;
+  padding-top: 6rem;
   height: 100%;
+  position: relative;
+  z-index: 5;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  background-color: #ebebeb;
-  color: #39393A !important;
+  justify-content: start;
 }
 
 .button {
@@ -2422,14 +2421,38 @@ export default {
 }
 
 .stupid-image-container {
-    width: 100%;
-    height: 30%;
+    position: absolute;
+    height: 50vh;
+    left: 50%;
+    bottom: -3rem;
+    z-index: 0;
+    transform: translate(-50%, 0);
     display: flex;
     justify-content: center;
 }
 
+.border-image-right {
+    position: absolute;
+    height: 8.5rem;
+    width: 1px;
+    left: 37.5%;
+    bottom: 0;
+    transform: translate(-50%, 0);
+    background-color: #995116;
+}
+
+.border-image-left {
+    position: absolute;
+    height: 8.3rem;
+    left: 62.5%;
+    width: 1px;
+    bottom: 0;
+    transform: translate(-50%, 0);
+    background-color: #995116;
+}
+
 .stupid-image {
-    height: 100%;
+    width: 100%;
     object-fit: contain;
 
 }
@@ -2448,6 +2471,11 @@ export default {
   justify-content: center;
   bottom: 0;
   animation: MoveUpDown 2s linear infinite;
+}
+
+.white {
+    background-color: white;
+
 }
 
 .arrow-up-container {
@@ -2478,6 +2506,13 @@ export default {
   .container {
     justify-content: start;
   }
+
+  .stupid-image-container {
+    width: 100vw;
+    height: auto;
+    opacity: 50%;
+    left: 50%;
+    }
 }
 
 @keyframes MoveUpDown {

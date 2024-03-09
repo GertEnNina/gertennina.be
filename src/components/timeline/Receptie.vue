@@ -14,7 +14,7 @@
       <p class="subtitle">OPGELET: Er is geen parkeerplaats aan de abdij.</p>
       <p class="subtitle">Kom je met de auto, parkeer je dan in Parking Vaartkom:</p>
       <a href="https://maps.app.goo.gl/ZvgSh3XtkKBf2L8K6">Engels Plein 32, 3000 Leuven</a>
-      <a style="margin-top: 1rem;" href="https://www.google.be/maps/dir/Abdij+Keizersberg,+Mechelsestraat+202,+3000+Leuven/Parking+Vaartkom,+Engels+Plein+32,+3000+Leuven/@50.8884017,4.6930385,16z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x47c160c31763da33:0x13b27b33cd030033!2m2!1d4.6962415!2d50.8885663!1m5!1m1!1s0x47c160c56d643ce5:0xcd1ef370c7466c36!2m2!1d4.7006869!2d50.8887726!3e2?entry=ttu">Klik hier voor de  wandelroute van de parking naar de abdij.</a>
+      <a style="margin-top: 1rem; text-decoration: underline;" href="https://www.google.be/maps/dir/Abdij+Keizersberg,+Mechelsestraat+202,+3000+Leuven/Parking+Vaartkom,+Engels+Plein+32,+3000+Leuven/@50.8884017,4.6930385,16z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x47c160c31763da33:0x13b27b33cd030033!2m2!1d4.6962415!2d50.8885663!1m5!1m1!1s0x47c160c56d643ce5:0xcd1ef370c7466c36!2m2!1d4.7006869!2d50.8887726!3e2?entry=ttu">Klik hier voor de  wandelroute van de parking naar de abdij.</a>
     </div>
   </div>
 </template>
