@@ -13,12 +13,12 @@
 
     <div class="section">
       <h1 class="section-title">Wat moet ik aandoen?</h1>
-      <p class="subtitle">Het belangrijkste is dat je iets draagt waarin je je goed voel. Als je toch zou twijfelen, ga dan voor casual chic.</p>
+      <p class="subtitle">Het belangrijkste is dat je iets draagt waarin je je goed voelt. Als je toch zou twijfelen, ga dan voor casual chic.</p>
     </div>
 
     <div class="section">
       <h1 class="section-title">Mogen we foto's nemen tijdens de ceremonie en het feest?</h1>
-      <p class="subtitle">Natuurlijk! <span style="font-weight: bold;">Tijdens de ceremonie willen we echter een intieme sfeer behouden, dus vragen we om geen foto's te maken tijdens dit deel van de dag</span>. Onze fotograaf zal zorgen voor prachtige beelden die we graag met jullie wullen delen na afloop van het feest.</p>
+      <p class="subtitle">Natuurlijk! <span style="font-weight: bold;">Tijdens de ceremonie willen we echter een intieme sfeer behouden, dus vragen we om geen foto's te maken tijdens dit deel van de dag</span>. Onze fotograaf zal zorgen voor prachtige beelden die we graag met jullie willen delen na afloop van het feest.</p>
     </div>
 
     <div class="section">

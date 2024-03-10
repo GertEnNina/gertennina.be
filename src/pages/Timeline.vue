@@ -37,8 +37,8 @@
         <h2>Welkom {{ guest.name.split(" ")[0] }},</h2>
         <p style="margin-top: 0.5rem;">We ontvangen jou <span v-if="partner">en {{ partner.name.split(" ")[0] !== 'Partner' ? partner.name.split(" ")[0] : 'jouw partner' }}</span> graag om samen ons huwelijk te vieren</p>
         <p style="margin-top: 2rem;">Gebruik de pijltjes boven - en onder de pagina om een kijkje te nemen op onze site.</p>
-        <p>Je vind hier meer details over het programma en praktische informatie.</p>
-        <p>  <span style="font-weight: bold;">Aan het einde vind je een formulier om jou <span v-if="partner">en je partners</span> aanwezigheid te bevestigen</span></p>
+        <p>Je vindt hier meer details over het programma en praktische informatie.</p>
+        <p><span style="font-weight: bold;">Aan het einde vind je een formulier om jou <span v-if="partner">en je partners</span> aanwezigheid te bevestigen</span></p>
         <div class="index">
           <h2>Ga snel naar</h2>
           <p class="index-item" @click="scrollTo(1)">> Het programma</p>
