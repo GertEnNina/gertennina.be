@@ -2240,16 +2240,17 @@ export default {
       this.noGuestFound = false;
       localStorage.setItem('guest_first_name', this.firstName);
       localStorage.setItem('guest_last_name', this.lastName);
-      this.getGuest(this.firstName + ' ' + this.lastName);
+      this.getGuest(this.firstName.trim() + ' ' + this.lastName.trim());
       window.location.hash = this.scrollIds[this.currentScrollId];
     },
     getGuest(name) {
+      console.log(name);
       this.guest = guests.find((el) => {
-        return el.name.toLowerCase() === name.toLowerCase();
+        return el.name.toLowerCase().trim() === name.toLowerCase().trim();
       });
       if (this.guest && this.guest.partner) {
         this.partner = guests.find((el) => {
-          return el.name.toLowerCase() === this.guest.partner.toLowerCase();
+          return el.name.toLowerCase().trim() === this.guest.partner.toLowerCase().trim();
         });
       } else {
         this.noGuestFound = true;
