@@ -1439,14 +1439,14 @@ const guests = [
         "events": eventGroups.receptie
     },
     {
-        "name": "Paul Dekeyser",
+        "name": "Pol De Keyser",
         "partner": "Hilde Hertecant",
         "formType": "receptie",
         "events": eventGroups.receptie
     },
     {
         "name": "Hilde Hertecant",
-        "partner": "Paul Dekeyser",
+        "partner": "Pol De Keyser",
         "formType": "receptie",
         "events": eventGroups.receptie
     },
@@ -2128,7 +2128,55 @@ const guests = [
         "formType": "receptie",
         "events": eventGroups.receptie
     },
-
+    {
+        "name": "Georges Elshocht",
+        "partner": "Yvonne Deleul",
+        "formType": "receptie",
+        "events": eventGroups.receptie
+    },
+    {
+        "name": "Yvonne Deleul",
+        "partner": "Georges Elshocht",
+        "formType": "receptie",
+        "events": eventGroups.receptie
+    },
+            {
+        "name": "Hans-Peter Palenbergh",
+        "partner": "Gitty Palenbergh",
+        "formType": "receptie",
+        "events": eventGroups.receptie
+    },
+        {
+        "name": "Gitty Palenbergh",
+        "partner": "Hans-Peter Palenbergh",
+        "formType": "receptie",
+        "events": eventGroups.receptie
+    },
+    {
+        "name": "Markus Rohner",
+        "partner": "Monika Rohner",
+        "formType": "receptie",
+        "events": eventGroups.receptie
+    },
+        {
+        "name": "Monika Rohner",
+        "partner": "Markus Rohner",
+        "formType": "receptie",
+        "events": eventGroups.receptie
+    },
+    {
+        "name": "Patrick Nettesheim",
+        "partner": "Michele Nettesheim",
+        "formType": "receptie",
+        "events": eventGroups.receptie
+    },
+        {
+        "name": "Michele Nettesheim",
+        "partner": "Patrick Nettesheim",
+        "formType": "receptie",
+        "events": eventGroups.receptie
+    },
+            
     // Ceremonie
     {
         "name": "Jean-Louis De Lagausie",
