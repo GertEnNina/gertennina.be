@@ -2244,6 +2244,7 @@ export default {
       window.location.hash = this.scrollIds[this.currentScrollId];
     },
     getGuest(name) {
+      console.log(name);
       this.guest = guests.find((el) => {
         return el.name.toLowerCase().trim() === name.toLowerCase().trim();
       });
