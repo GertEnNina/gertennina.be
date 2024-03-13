@@ -8,14 +8,14 @@
     <div class="section">
       <h1 class="section-title">LOCATIE</h1>
       <p class="subtitle">Stadhuis Leuven</p>
-    <a href="https://maps.app.goo.gl/pLQpuQENVWaSpwsW9">Grote Markt 9, 3000 Leuven</a>
+    <a target="_blank" href="https://maps.app.goo.gl/pLQpuQENVWaSpwsW9">Grote Markt 9, 3000 Leuven</a>
       <Location class="location" address="Grote Markt 9, 3000 Leuven" location="Stadhuis Leuven" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2517.421659679618!2d4.69861247643042!3d50.878905771677175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c160d9b1d94719%3A0xf36ef92d64506731!2sHistorisch%20Stadhuis%20van%20Leuven!5e0!3m2!1snl!2sbe!4v1709490066760!5m2!1snl!2sbe"></Location>
     </div>
 
     <div class="section">
       <h1 class="section-title">PARKING</h1>
         <p class="subtitle">Q-Park Leuven Heilig Hart</p>
-        <a href="https://maps.app.goo.gl/F4D1mxhdpFD3YgBV8">Naamsestraat 102, 3000 Leuven</a>
+        <a target="_blank" href="https://maps.app.goo.gl/F4D1mxhdpFD3YgBV8">Naamsestraat 102, 3000 Leuven</a>
         <p class="subtitle">10 min. wandelen van de locatie</p>
       </div>
   </div>
