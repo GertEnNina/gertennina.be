@@ -15,7 +15,7 @@
       <h1 class="section-title">PARKING</h1>
      
         <p class="subtitle">Parking Indigo Mechelen Keerdok</p>
-        <a href="https://maps.app.goo.gl/Mbfo7zjpkSSUHVqf6">Antonia Wolversstraat 1, 2800 Mechelen</a>
+        <a target="_blank" href="https://maps.app.goo.gl/Mbfo7zjpkSSUHVqf6">Antonia Wolversstraat 1, 2800 Mechelen</a>
       </div>
 
       <div class="section">

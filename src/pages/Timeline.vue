@@ -26,8 +26,8 @@
     </div>
     <div v-else class="timeline-container">
       <div v-if="currentScrollId > 0" class="arrow-up-container">
-        <div class="arrow" @click="scrollUp()">
-          <font-awesome-icon icon="fa-solid fa-arrow-up" class="icon" />
+        <div class="arrow">
+          <font-awesome-icon @click="scrollUp()" icon="fa-solid fa-arrow-up" class="icon" />
         </div>
       </div>
       <div class="stupid-image-container">
@@ -56,8 +56,8 @@
         </div>
       </div>
       <div v-if="currentScrollId !== scrollIds.length - (partner ? 1 : 2)" class="arrow-down-container">
-          <div class="arrow" :class="{'white': currentScrollId === 0}" @click="scrollDown()">
-            <font-awesome-icon icon="fa-solid fa-arrow-down" class="icon" />
+          <div class="arrow" :class="{'white': currentScrollId === 0}">
+            <font-awesome-icon icon="fa-solid fa-arrow-down" class="icon"  @click="scrollDown()" />
           </div>
         </div>
     </div>
