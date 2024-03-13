@@ -15,7 +15,7 @@
                 <input class="name-input" type="text" placeholder="Voornaam" v-model="firstName"/>
                 <input class="name-input" type="text" placeholder="Achternaam" v-model="lastName"/>
                 <button class="button" @click="setName()">Verder</button>
-                <p v-if="noGuestFound" style="font-weight: bold; color: red;">Oeps, we hebben je naam niet terug gevonden, probeer je naam zoals hij op de envelop is geschreven of probeer een met de naam van je partner. Lukt het nog niet? Stuur dan alstublieft een mailtje naar gert.nina.vdbstb@gmail.com</p>
+                <p v-if="noGuestFound" style="font-weight: bold; color: red;">Oeps, we hebben je naam niet terug gevonden, probeer je naam zoals hij op de envelop is geschreven of probeer eens met de naam van je partner. Lukt het nog niet? Stuur dan alstublieft een mailtje naar gert.nina.vdbstb@gmail.com</p>
             </div>
         </div>
         <div v-if="!scrolledToNameInput" class="arrow-down-container">
@@ -35,10 +35,10 @@
         </div>
       <div class="welcome" id="welcome">
         <h2>Welkom {{ guest.name.split(" ")[0] }},</h2>
-        <p style="margin-top: 0.5rem;">We ontvangen jou <span v-if="partner">en {{ partner.name.split(" ")[0] !== 'Partner' ? partner.name.split(" ")[0] : 'jouw partner' }}</span> graag om samen ons huwelijk te vieren</p>
+        <p style="margin-top: 0.5rem;">We ontvangen jou <span v-if="partner">en {{ partner.name.split(" ")[0] !== 'Partner' ? partner.name.split(" ")[0] : 'jouw partner' }}</span> graag om samen ons huwelijk te vieren.</p>
         <p style="margin-top: 2rem;">Gebruik de pijltjes boven - en onder de pagina om een kijkje te nemen op onze site.</p>
         <p>Je vindt hier meer details over het programma en praktische informatie.</p>
-        <p><span style="font-weight: bold;">Aan het einde vind je een formulier om jouw <span v-if="partner">en je partners</span> aanwezigheid te bevestigen</span></p>
+        <p>Aan het einde vind je een formulier om<span style="font-weight: bold;"> jouw <span v-if="partner">en je partners</span> aanwezigheid te bevestigen</span>.</p>
         <div class="index">
           <h2>Ga snel naar</h2>
           <p class="index-item" @click="scrollTo(1)">> Het programma</p>
