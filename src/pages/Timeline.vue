@@ -1085,6 +1085,11 @@ const guests = [
         "formType": "partial",
         "events": eventGroups.partial
     },
+    {
+        "name": "Thomas Antheunis",
+        "formType": "partial",
+        "events": eventGroups.partial
+    },
 
     // Receptie
     {
