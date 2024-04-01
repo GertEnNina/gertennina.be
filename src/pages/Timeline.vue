@@ -914,6 +914,11 @@ const guests = [
         "events": eventGroups.partial
     },
     {
+        "name": "Mathilde Brusselmans",
+        "formType": "partial",
+        "events": eventGroups.partial
+    },    
+    {
         "name": "Yentl Koopmans",
         "partner": "Joost Slegers",
         "formType": "partial",
@@ -2176,7 +2181,19 @@ const guests = [
         "formType": "receptie",
         "events": eventGroups.receptie
     },
-            
+        {
+        "name": "Dominique Surinx",
+        "partner": "Sara Surinx",
+        "formType": "receptie",
+        "events": eventGroups.receptie
+    },
+        {
+        "name": "Sara Surinx",
+        "partner": "Dominique Surinx",
+        "formType": "receptie",
+        "events": eventGroups.receptie
+    },
+    
     // Ceremonie
     {
         "name": "Jean-Louis De Lagausie",
