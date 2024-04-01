@@ -1087,6 +1087,13 @@ const guests = [
     },
     {
         "name": "Thomas Antheunis",
+        "partner": "Lena",
+        "formType": "partial",
+        "events": eventGroups.partial
+    },
+    {
+        "name": "Lena",
+        "partner": "Thomas Antheunis",
         "formType": "partial",
         "events": eventGroups.partial
     },
