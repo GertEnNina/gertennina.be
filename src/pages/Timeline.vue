@@ -1087,12 +1087,12 @@ const guests = [
     },
     {
         "name": "Thomas Antheunis",
-        "partner": "Lena",
+        "partner": "Lena Sauwens",
         "formType": "partial",
         "events": eventGroups.partial
     },
     {
-        "name": "Lena",
+        "name": "Lena Sauwens",
         "partner": "Thomas Antheunis",
         "formType": "partial",
         "events": eventGroups.partial
