@@ -675,13 +675,6 @@ const guests = [
     },
     {
         "name": "Samuel Vermote",
-        "partner": "Martha Pickles",
-        "formType": "full",
-        "events": eventGroups.full
-    },
-    {
-        "name": "Martha Pickles",
-        "partner": "Samuel Vermote",
         "formType": "full",
         "events": eventGroups.full
     },
