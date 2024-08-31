@@ -4,17 +4,19 @@
 
 <script>
 import Register from './pages/Register.vue'
+import ThankYou from './pages/ThankYou.vue';
 import Timeline from './pages/Timeline.vue'
 
 const routes = {
-  '/': Timeline,
+  '/': ThankYou,
 }
 
 export default {
   name: 'App',
   components: {
     Register,
-    Timeline
+    Timeline,
+    ThankYou
   },
   data() {
     return {
